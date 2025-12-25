@@ -1,5 +1,4 @@
 
-# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAjXIAr-Agp-MRCvJ9v-Al0")
 import sys
 import io
 import wave

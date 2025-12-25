@@ -45,3 +45,9 @@ node_modules/
 
 # Other
 *.sqlite3
+.venv/
+venv/
+__pycache__/
+*.dll
+*.so
+

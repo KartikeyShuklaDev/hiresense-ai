@@ -1,184 +1,157 @@
-🚀 HireSense AI
-AI‑Powered Voice Interview Platform with RAG, Multilingual Support & Real‑Time Evaluation
-Author: Kartikey Shukla
-GitHub: https://github.com/KartikeyShuklaDev
+# 🚀 HireSense AI  
+### AI‑Powered Voice Interview Platform with RAG, Multilingual Support & Flutter UI
 
-📌 Overview
-HireSense AI is an end‑to‑end AI‑driven recruitment and interview automation platform that simulates a real human interviewer using voice interaction, Retrieval‑Augmented Generation (RAG), and Large Language Models (LLMs).
+**Author:** Kartikey Shukla  
+**GitHub:** https://github.com/KartikeyShuklaDev  
 
-The platform automates:
+---
 
-Resume understanding
+## 📌 Overview
 
-HR and technical interviews
+HireSense AI is an end‑to‑end **AI‑driven recruitment and interview automation platform** that simulates a real human interviewer using **voice interaction**, **Retrieval‑Augmented Generation (RAG)**, and **Large Language Models (LLMs)**.
 
-Candidate evaluation
+The platform automates resume understanding, HR and technical interviews, candidate evaluation, and recruitment communication (MailGen). It is built with a **Flutter frontend** and a **Flask‑based AI backend**, making it suitable for real‑world hiring, campus recruitment, and research use cases.
 
-Recruitment communication (MailGen)
+---
 
-HireSense AI is designed for scalable hiring, campus recruitment, mock interviews, and research on RAG evaluation, with a Flutter frontend and a Flask‑based AI backend.
+## ✨ Key Features
 
-✨ Key Features
-🎙️ Fully voice‑based AI interviewer
+- 🎙️ Fully voice‑based AI interviewer  
+- 🌍 Multilingual interview support  
+- 🧠 RAG‑powered technical question generation  
+- 📊 Precision, Recall, and F1‑Score based evaluation  
+- 📱 Cross‑platform Flutter UI (Web & Mobile)  
+- 📩 Automated recruitment emails (MailGen)  
+- 🔐 Secure, modular, production‑ready architecture  
 
-🌍 Multilingual interview support
+---
 
-🧠 RAG‑powered technical question generation
+## 🗣️ Voice‑Based AI Interviewer
 
-📊 Concept‑level Precision, Recall, and F1‑Score evaluation
+HireSense AI conducts interviews through **natural voice interaction**, eliminating manual input and simulating a real interview experience.
 
-📱 Flutter UI for Web & Mobile
+**Highlights**
+- No keyboard or mouse required  
+- Human‑like conversational flow  
+- Automatic voice detection  
+- Graceful handling of pauses and retries  
+- Interviewer persona: *Victus*  
 
-📩 Automated recruitment emails (MailGen)
+---
 
-🔐 Secure, modular, production‑ready architecture
+## 🌍 Multilingual Support
 
-🗣️ Voice‑Based AI Interviewer
-HireSense AI conducts interviews using natural voice interaction, eliminating manual input.
+Candidates can choose their preferred interview language at the beginning of the session:
 
-Highlights
-No keyboard or mouse required
+- English  
+- Hindi  
+- Punjabi  
+- Marathi  
+- Tamil  
 
-Human‑like conversational flow
+Speech‑to‑Text (STT) and Text‑to‑Speech (TTS) dynamically adapt to the selected language.
 
-Automatic voice detection
+---
 
-Graceful handling of pauses and retries
+## 🧠 Intelligent Interview Workflow
 
-Interviewer persona: Victus
+1. **Candidate Onboarding**  
+   - Candidate name and language selection  
+   - Secure data storage  
 
-🌍 Multilingual Support
-Candidates can select their preferred language at the start of the interview:
+2. **HR Interview Round**  
+   - Structured and bias‑aware HR questions  
+   - Focus on communication and behavioral skills  
 
-English
+3. **Technical Interview Round**  
+   - Candidate selects technical skills (e.g., Python, Java, C++)  
+   - Skill‑conditioned questions generated using RAG  
+   - Questions grounded strictly in textbook‑verified content  
 
-Hindi
+4. **Wrap‑Up**  
+   - Candidate queries  
+   - Voice‑based interview summary  
 
-Punjabi
+---
 
-Marathi
+## 📚 Retrieval‑Augmented Generation (RAG)
 
-Tamil
+HireSense AI uses a semantic **RAG pipeline** to ensure accurate, grounded, and hallucination‑free technical interviews.
 
-Speech‑to‑Text (STT) and Text‑to‑Speech (TTS) dynamically adapt based on the selected language.
+**RAG Pipeline**
+- Textbooks & PDFs are chunked and embedded  
+- FAISS vector database enables semantic retrieval  
+- Skill‑conditioned semantic queries are generated  
+- LLM produces questions strictly from retrieved context  
 
-🧠 Intelligent Interview Flow
-1️⃣ Candidate Onboarding
-Candidate name & language selection
+**Benefits**
+- Domain‑accurate interviews  
+- No hallucinated questions  
+- Transparent and explainable evaluation  
 
-Secure data storage in MongoDB
+---
 
-2️⃣ HR Interview Round
-Structured, bias‑aware HR questions
+## 📊 Evaluation & Metrics
 
-Focus on communication, behavior, and situational awareness
+### Candidate Evaluation
+- Accuracy score (0–100)  
+- Missing concept detection  
+- Groundedness with retrieved context  
+- LLM confidence‑based reliability  
 
-No salary‑related questions in early stages
+### RAG Evaluation
+- Precision  
+- Recall  
+- F1‑Score  
+- Concept‑level relevance analysis  
 
-3️⃣ Technical Interview Round
-Candidate selects technical skills (e.g., Python, Java, C++)
+Metrics are aggregated at the interview level and visualized for analysis.
 
-Skill‑conditioned questions generated using RAG
+---
 
-Questions grounded strictly in textbook‑verified content
+## 📱 Flutter UI (Frontend)
 
-4️⃣ Wrap‑Up
-Candidate questions
+HireSense AI uses **Flutter** to provide a modern, cross‑platform user interface.
 
-Voice‑based interview summary
+**Why Flutter**
+- Single codebase for Web & Mobile  
+- High‑performance UI  
+- Real‑time voice interaction  
+- Clean separation from backend AI logic  
 
-📚 Retrieval‑Augmented Generation (RAG)
-HireSense AI uses a semantic RAG pipeline to ensure accurate, grounded, and hallucination‑free interviews.
+**Flutter Responsibilities**
+- Candidate onboarding screens  
+- Voice interview interface  
+- Interview progress tracking  
+- Status and history views  
+- Display of evaluation summaries  
 
-RAG Pipeline
-📖 Textbooks & PDFs → chunked and embedded
+Flutter handles only presentation; all AI logic runs on the backend.
 
-🔍 FAISS vector database for semantic retrieval
+---
 
-🧩 Skill‑conditioned semantic queries
+## 🧩 Technology Stack
 
-🧠 LLM generates questions only from retrieved context
+**Frontend**
+- Flutter (Web & Mobile)
 
-Benefits
-No hallucinated questions
+**Backend & AI**
+- Python (Flask microservices)  
+- FAISS (Vector Database)  
+- MongoDB (Candidate & interview data)  
 
-Domain‑accurate technical interviews
+**LLMs & Speech**
+- Groq LLM – LLaMA‑4 Maverick (primary reasoning)  
+- Gemini (fallback LLM & STT)  
+- ElevenLabs (STT & TTS)  
+- Whisper (fallback STT)  
+- Sentence Transformers (embeddings)  
 
-Transparent and explainable evaluation
+---
 
-📊 Evaluation & Metrics
-Candidate Evaluation
-Accuracy score (0–100)
+## 📁 Project Structure
 
-Missing concept detection
-
-Groundedness with retrieved context
-
-LLM confidence‑based reliability score
-
-RAG Evaluation
-Precision
-
-Recall
-
-F1‑Score
-
-Concept‑level relevance analysis
-
-Aggregated interview‑level metrics
-
-Metrics are visualized using clear bar charts for analysis and reporting.
-
-📱 Flutter UI (Frontend)
-HireSense AI uses Flutter to deliver a cross‑platform, real‑time voice interview interface.
-
-Why Flutter?
-Single codebase for Web & Mobile
-
-High‑performance UI
-
-Real‑time voice interaction
-
-Clean separation from AI logic
-
-Easy REST API integration
-
-Flutter Responsibilities
-Candidate onboarding & interview screens
-
-Voice input/output handling
-
-Interview progress tracking
-
-Status and history views
-
-Display of evaluation summaries
-
-Flutter handles presentation only; all AI logic runs on the backend.
-
-🧩 Technology Stack
-Frontend
-Flutter (Web & Mobile)
-
-Backend & AI
-Python (Flask microservices)
-
-FAISS (Vector Database)
-
-MongoDB (Candidate & interview data)
-
-LLMs & Speech
-Groq LLM – LLaMA‑4 Maverick (primary reasoning & evaluation)
-
-Gemini (fallback LLM & STT)
-
-ElevenLabs (STT & TTS)
-
-Whisper (fallback STT)
-
-Sentence Transformers (embeddings)
-
-📁 Project Structure
+```text
 integration-with-flutter/
 │
 ├── frontend_app/                  # Flutter Frontend (Web / Mobile)
@@ -202,35 +175,3 @@ integration-with-flutter/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-🔁 End‑to‑End System Flow
-Flutter UI → Flask APIs → RAG + LLM → Evaluation → Results → Flutter UI → MailGen
-
-📈 Use Cases
-AI‑driven technical hiring
-
-Campus recruitment automation
-
-Mock interview practice
-
-Skill‑based candidate screening
-
-Research on RAG evaluation metrics
-
-🔐 Security & Best Practices
-No API keys committed
-
-.env‑based configuration
-
-Clean Git history
-
-Modular and scalable design
-
-Production‑ready repository structure
-
-👨‍💻 About the Author
-Kartikey Shukla
-AI & Full‑Stack Developer
-Focused on LLMs, RAG systems, Voice AI, Flutter applications, and intelligent evaluation frameworks.
-
-🔗 GitHub: https://github.com/KartikeyShuklaDev
-

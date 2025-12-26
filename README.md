@@ -19,7 +19,6 @@ The platform automates resume understanding, HR and technical interviews, candid
 - 🎙️ Fully voice‑based AI interviewer  
 - 🌍 Multilingual interview support  
 - 🧠 RAG‑powered technical question generation  
-- 📊 Precision, Recall, and F1‑Score based evaluation  
 - 📱 Cross‑platform Flutter UI (Web & Mobile)  
 - 📩 Automated recruitment emails (MailGen)  
 - 🔐 Secure, modular, production‑ready architecture  
